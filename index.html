@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Weather Dashboard 🌤️</h1>
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button onclick="getWeather()">Search</button>
+    </header>
+
+    <main>
+        <div class="weather-info">
+            <h2 id="cityName">City</h2>
+            <p id="temperature">Temperature: --°C</p>
+            <p id="description">Condition: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="windSpeed">Wind Speed: -- km/h</p>
+        </div>
+    </main>
+
+    <div class="sun"></div>
+
+<div class="cloud" style="top: 10%; left: -150px;"></div>
+<div class="cloud" style="top: 20%; left: -100px; animation-delay: 3s;"></div>
+<div class="cloud" style="top: 30%; left: -50px; animation-delay: 6s;"></div>
+
+<div class="raindrop" style="top: 50%; left: 20%; animation-delay: 1s;"></div>
+<div class="raindrop" style="top: 60%; left: 50%; animation-delay: 2s;"></div>
+<div class="raindrop" style="top: 70%; left: 70%; animation-delay: 3s;"></div>
+
+    <footer>
+        <p>Powered by WeatherAPI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
